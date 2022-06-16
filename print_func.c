@@ -19,7 +19,6 @@ void pall(stack_t **stack, unsigned int __attribute__((unused))line_number)
 		current = current->next;
 	}
 }
-
 /**
  * pint - prints value at the top of the stack, plus new line
  * @stack: pointer to stack
