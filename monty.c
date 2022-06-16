@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	char *opcode;
 	char *n;
 	unsigned int line_number;
-	char line[128];
+	char line[512];
 
 	if (argc != 2)
 	{
