@@ -1,6 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#include "struct.h"
+#define DELIMITERS "\n\t\r "
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,15 +12,8 @@
 #include <fcntl.h>
 #include <ctype.h>
 
-#include "structs.h"
+int opcode_getfunc(char *opcode, stack_t **stack, int int_number);
 
-/* macros */
-#define DELIMITERS "\n\t\r "
-
-/* struct search function */
-int opcode_struct(char *opcode, stack_t **stack, unsigned int line_number);
-
-/* stack functions */
 void push(stack_t **stack, unsigned int line_number, char *n);
 void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
@@ -42,4 +37,4 @@ size_t stack_length(stack_t **stack);
 void free_stack(stack_t **stack);
 void free_all(stack_t *stack, char *line, FILE *fp);
 
-#endif /* MONTY_H */
+#endif
