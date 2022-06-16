@@ -15,6 +15,7 @@ int opcode_getfunc(char *opcode, stack_t **stack, int line_number)
 
 	instruction_t op[] = {
 		{"pall", pall},
+		{"nop", nop},
 		/**
 		* {"pint", pint},
 		*{"pstr", pstr},

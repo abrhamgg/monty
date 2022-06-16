@@ -48,6 +48,5 @@ int main(int argc, char *argv[])
 			opcode = strtok(NULL, DELIMITERS);
 		}
 	}
-	free(line);
 	return (EXIT_SUCCESS);
 }
